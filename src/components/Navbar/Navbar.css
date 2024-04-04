@@ -1,0 +1,78 @@
+header{
+    border-bottom:.01em solid gray;
+    height: 10em;
+}
+.top-header{
+    background-color: black;
+    height: 2.5rem;
+    width: 100vw;
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+    padding: 0px 20rem 0px 20rem ;
+}
+.top-header-content{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.mid-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 5px;
+}
+.mid-header ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.mid-header ul li{
+    cursor: pointer;
+    padding-right: 5px;
+}
+.mid-header ul li:last-child{
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: bold;
+}
+.header-logo{
+    width: 200px;
+    padding-left: 8rem;
+}
+
+.logo-text{
+    padding-left: 7.5rem;
+    font-size: x-large;
+    font-weight: bold;
+    width: 200px;
+}
+.header-items{
+    padding-right: 100px;
+    margin-right: 100px;
+    width: 200px;
+}
+
+.header-tabs ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 4rem;
+    font-size: .9em;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 60px;
+}
