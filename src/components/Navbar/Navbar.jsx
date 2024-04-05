@@ -8,30 +8,34 @@ import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import FilterVintageOutlinedIcon from '@mui/icons-material/FilterVintageOutlined';
+import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 const Navbar = () => {
   return (
     <>
       <header>
       {/*header top section */}
-        <div className="top-header">
-          <div className="top-header-content">
+        <section className="top-header">
+          <li className="top-header-content">
             <DeliveryDiningIcon />
             <p>Free Delivery</p>
-          </div>
-          <div className="top-header-content">
+          </li>
+          <li className="top-header-content">
             <DiscountIcon />
             <p>upto 40%off</p>
-          </div>
-          <div className="top-header-content">
+          </li>
+          <li className="top-header-content">
             <SupportIcon />
             <p>7*24 support</p>
-          </div>
-        </div>
+          </li>
+        </section>
 
         {/* header middle section */}
-        <div className="mid-header">
+        <section className="mid-header">
+        <div className="menu-icon">
+            <DensityMediumIcon/>
+        </div>
             <div className="header-logo">
-                <FilterVintageOutlinedIcon/>
+                <FilterVintageOutlinedIcon fontSize="large"/>
             </div>
             <div className="logo-text">LOGO</div>
             <div className="header-items">
@@ -43,9 +47,9 @@ const Navbar = () => {
                     <li><span>ENG</span> <KeyboardArrowDownOutlinedIcon/></li>
                 </ul>
             </div>
-        </div>
+        </section>
         {/* header tabs */}
-        <div className="header-tabs">
+        <section className="header-tabs">
             <ul>
                 <li>shop</li>
                 <li>skills</li>
@@ -53,7 +57,7 @@ const Navbar = () => {
                 <li>about</li>
                 <li>contact us</li>
             </ul>
-        </div>
+        </section>
       </header>
     </>
   );
