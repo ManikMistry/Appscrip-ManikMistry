@@ -76,4 +76,7 @@ a {
   .demo {
     display: none;
   }
+  .product-bar{
+    margin: 0px 20px;
+  }
 }
