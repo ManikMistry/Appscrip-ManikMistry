@@ -1,19 +1,26 @@
+"use client"
 import "./Navbar.css";
+import { useState } from "react";
 import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
 import DiscountIcon from "@mui/icons-material/Discount";
 import SupportIcon from "@mui/icons-material/Support";
-import SearchIcon from '@mui/icons-material/Search';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
-import FilterVintageOutlinedIcon from '@mui/icons-material/FilterVintageOutlined';
-import DensityMediumIcon from '@mui/icons-material/DensityMedium';
+import SearchIcon from "@mui/icons-material/Search";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import FilterVintageOutlinedIcon from "@mui/icons-material/FilterVintageOutlined";
+import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <>
       <header>
-      {/*header top section */}
+        {/*header top section */}
         <section className="top-header">
           <li className="top-header-content">
             <DeliveryDiningIcon />
@@ -31,33 +38,46 @@ const Navbar = () => {
 
         {/* header middle section */}
         <section className="mid-header">
-        <div className="menu-icon">
-            <DensityMediumIcon/>
-        </div>
-            <div className="header-logo">
-                <FilterVintageOutlinedIcon fontSize="large"/>
-            </div>
-            <div className="logo-text">LOGO</div>
-            <div className="header-items">
-                <ul>
-                    <li><SearchIcon/></li>
-                    <li><FavoriteBorderIcon/></li>
-                    <li><LocalMallOutlinedIcon/></li>
-                    <li><PersonOutlineOutlinedIcon/></li>
-                    <li><span>ENG</span> <KeyboardArrowDownOutlinedIcon/></li>
-                </ul>
-            </div>
+          <div className="menu-icon" onClick={toggleMenu}>
+            <DensityMediumIcon />
+          </div>
+          <div className="header-logo">
+            <FilterVintageOutlinedIcon fontSize="large" />
+          </div>
+          <div className="logo-text">LOGO</div>
+          <div className="header-items">
+            <ul>
+              <li>
+                <SearchIcon />
+              </li>
+              <li>
+                <FavoriteBorderIcon />
+              </li>
+              <li>
+                <LocalMallOutlinedIcon />
+              </li>
+              <li>
+                <PersonOutlineOutlinedIcon />
+              </li>
+              <li>
+                <span>ENG</span> <KeyboardArrowDownOutlinedIcon />
+              </li>
+            </ul>
+          </div>
         </section>
         {/* header tabs */}
-        <section className="header-tabs">
+
+        {showMenu &&(
+          <section className="header-tabs">
             <ul>
-                <li>shop</li>
-                <li>skills</li>
-                <li>stories</li>
-                <li>about</li>
-                <li>contact us</li>
+              <li>shop</li>
+              <li>skills</li>
+              <li>stories</li>
+              <li>about</li>
+              <li>contact us</li>
             </ul>
-        </section>
+          </section>
+        )}
       </header>
     </>
   );
