@@ -18,13 +18,13 @@ const Product = () => {
           <p className="demo">3425 items</p>
           <div>
             {showFilter ? (
-              <KeyboardArrowLeftIcon onClick={toggleFilter} />
+              <KeyboardArrowLeftIcon onClick={toggleFilter} className="l-arrow"/>
             ) : (
-              <KeyboardArrowRightOutlined onClick={toggleFilter} />
+              <KeyboardArrowRightOutlined onClick={toggleFilter} className="r-arrow"/>
             )}
             <p>
               <a href="#" onClick={toggleFilter}>
-                {showFilter ? "Hide Filter" : "Show Filter"}
+                {showFilter ? "Filter" : "Filter"}
               </a>
             </p>
           </div>
@@ -52,7 +52,6 @@ const Product = () => {
             <ProductFilter/>
           </div>
         </div>
-
         {/* All Products */}
         <div className="all-products">
           <ProductList />

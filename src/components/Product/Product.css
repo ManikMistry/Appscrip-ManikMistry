@@ -79,4 +79,20 @@ a {
   .product-bar{
     margin: 0px 20px;
   }
+  .Product-f-l{
+    flex-direction: column;
+  }
+  .l-arrow{
+    display: none;
+  }
+  .r-arrow{
+    display: none;
+  }
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
 }
