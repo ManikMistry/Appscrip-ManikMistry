@@ -15,7 +15,7 @@ const Product = () => {
       {/* Product Bar */}
       <section className="product-bar">
         <div className="side-filter-section">
-          <p>3425 items</p>
+          <p className="demo">3425 items</p>
           <div>
             {showFilter ? (
               <KeyboardArrowLeftIcon onClick={toggleFilter} />

@@ -3,8 +3,8 @@ const HeroSection=()=> {
   return (
     <>
       <section className='hero-tab'>
-        <p>Home</p><span>|</span>
-        <p>Shop</p>
+        <p>HOME</p><span>|</span>
+        <p>SHOP</p>
       </section>
       <section className="hero-section">
       <h1>discover our product</h1>
