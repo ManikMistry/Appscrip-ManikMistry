@@ -8,6 +8,8 @@
     flex-wrap: wrap;
 }
 .product-card{
+    padding: 20px;
+    border-radius: 10px;
     width: 15rem;
     margin: 0.75rem;
     cursor: pointer;
@@ -30,8 +32,8 @@
 .card-image img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: left top;
+    object-fit: contain;
+    object-position: center;
     transition-duration: .5s;
     margin: 0 auto;
     display: block;
