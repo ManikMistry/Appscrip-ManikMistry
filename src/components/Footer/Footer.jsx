@@ -29,7 +29,7 @@ const Footer = () => {
         <div>
           <h1>currency</h1>
           <span><Image src={"/assets/usd.png"} alt="USA flag icon" height={30} width={30}/><h5>USD</h5></span>
-          <p>transaction will be completed in Euros and a currency reference is available on hover.</p>
+          <p>Transaction will be completed in Euros and a currency reference is available on hover.</p>
         </div>
         </section>
       </div>
